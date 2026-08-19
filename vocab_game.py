@@ -56,14 +56,14 @@ def show_result_dialog(ans1, ans2):
         st.success("✅ ข้อ 3: ถูกต้อง")
         score += 4
     else:
-        st.error(f"❌ ข้อ 3: ยังไม่ถูกต้อง (คุณตอบ '{u_ans2}')")
+        st.error(f"❌ ข้อ 3: ยังไม่ถูกต้อง (คุณตอบ '{u_ans3}')")
 
      # ตรวจข้อ 4
     if u_ans4 == "Phone":
         st.success("✅ ข้อ 4: ถูกต้อง")
         score += 4
     else:
-        st.error(f"❌ ข้อ 4: ยังไม่ถูกต้อง (คุณตอบ '{u_ans2}')")
+        st.error(f"❌ ข้อ 4: ยังไม่ถูกต้อง (คุณตอบ '{u_ans4}')")
         
 
     st.info(f"🏆 ได้คะแนนรวม: {score} คะแนน")
