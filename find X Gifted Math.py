@@ -1,7 +1,7 @@
 import time
 import streamlit as st
 
-st.title("⏱️ เกมเติมศัพท์จับเวลา")
+st.title("⏱️ เกมแก้สมการจับเวลา")
 
 # 1. กำหนดค่าเริ่มต้นใน session_state ถ้ายังไม่มี
 if "ans1_val" not in st.session_state:
@@ -127,14 +127,15 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans
 
     st.info(f"🏆 ได้คะแนนรวม: {score} คะแนน")
 
-    if score == 8-10:
-        st.success("เทพจัด")
-    else: score == 5-7:
-        st.success("เริ่ดมาก")
-    else: score == 2-4:
-        st.success("ลิงกัง")
-    else: score == 0-1:
-        st.success("อะมีบา")
+if score >= 8:
+    st.success("🔥 เทพจัด")
+elif score >= 5:
+    st.success("✨ เริ่ดมาก")
+elif score >= 2:
+    st.success("🐒 ลิงกัง")
+else:
+    st.success("🦠 อะมีบา")
+
 
 
 # ----------------------------------------------------
