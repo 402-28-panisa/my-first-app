@@ -61,7 +61,7 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans
     u_ans10 = ans10.strip().lower()
 
     # ตรวจข้อ 1
-    if u_ans1 == "4":
+    if u_ans1 == "12":
         st.success("✅ ข้อ 1: ถูกต้อง")
         score += 1
     else:
