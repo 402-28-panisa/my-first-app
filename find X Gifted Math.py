@@ -127,14 +127,14 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans
 
     st.info(f"🏆 ได้คะแนนรวม: {score} คะแนน")
 
-if score >= 8:
-    st.success("🔥 เทพจัด")
-elif score >= 5:
-    st.success("✨ เริ่ดมาก")
-elif score >= 2:
-    st.success("🐒 ลิงกัง")
-else:
-    st.success("🦠 อะมีบา")
+    if score >= 8:
+       st.success("🔥 เทพจัด")
+    elif score >= 5:
+       st.success("✨ เริ่ดมาก")
+    elif score >= 2:
+       st.success("🐒 ลิงกัง")
+    else:
+       st.success("🦠 อะมีบา")
 
 
 
